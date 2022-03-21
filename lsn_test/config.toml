@@ -1,6 +1,6 @@
 baseURL = 'https://reverent-gates-015aa0.netlify.app/'
 languageCode = 'ja'
-title = 'テストページ'
+title = 'test'
 
 #mdへのhtmlの追加
 [markup]

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Actors on テストページ</title>
+    <title>Actors on test</title>
     <link>https://reverent-gates-015aa0.netlify.app/actors/</link>
-    <description>Recent content in Actors on テストページ</description>
+    <description>Recent content in Actors on test</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language><atom:link href="https://reverent-gates-015aa0.netlify.app/actors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
