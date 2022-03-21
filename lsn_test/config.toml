@@ -2,6 +2,9 @@ baseURL = 'https://example.org/'
 languageCode = 'ja'
 title = 'マイページ'
 
+#ホームページへのリダイレクト
+[[redirects]] from =“ / *” to =“ /index.html” status = 200
+
 #mdへのhtmlの追加
 [markup]
   [markup.goldmark]
