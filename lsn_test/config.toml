@@ -1,0 +1,88 @@
+baseURL = 'http://example.org/'
+languageCode = 'ja'
+title = 'マイページ'
+
+#mdへのhtmlの追加
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+#読み込むパラメータ
+[params]
+
+#読み込むCSSの記載
+customCSS = ["/css/style.css",
+             "/css/header.css",
+             "/css/footer.css",
+             "/css/aos.css",
+             "/css/title.css",
+             "/css/md.css",
+             "/css/page_top.css",
+             "/css/tag_bar.css"]
+
+#読み込むJSの記載
+customJS = ["/js/buttons.js",
+            "/js/jquery.min.js",
+            "/js/header.js",
+            "/js/page_top.js"]
+             
+
+#ヘッダーのリンクで子要素はparentで親要素名を書く
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "組織情報"
+    title = "about section"
+    url = "/about"
+    weight = 6
+
+  [[menu.main]]
+    identifier = "child1"
+    name = "子要素（ダミー）"
+    title = "child1 section"
+    url = "#com-info/blog/child1/"
+    weight = -130
+    parent = "blog"
+
+  [[menu.main]]
+    identifier = "join"
+    name = "入会希望"
+    title = "join section"
+    url = "/join"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "post"
+    name = "協力隊募集"
+    title = "post section"
+    url = "/post/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "event"
+    name = "イベント"
+    title = "event section"
+    url = "/event/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "ブログ"
+    title = "blog section"
+    url = "/blog/"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "問い合わせ"
+    title = "contact section"
+    url = "/contact/"
+    weight = 1
+
+#タグ付け
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  actor = "actors"

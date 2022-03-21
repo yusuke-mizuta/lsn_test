@@ -1,0 +1,38 @@
+.footerSNS a {
+    font-size: 50px;
+    color: #3e3a39;
+}
+
+.footerSNS{
+    background-color: gray;
+}
+
+.footerSNSItems{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: #EC715F;
+    line-height: 60px;
+}
+
+.copyright {
+    font-size: 16px;
+    color: #FAFAFA;
+    text-align: center;
+}
+
+.fa-twitter:hover{
+    color:lightblue;
+}
+
+.fa-youtube-play:hover{
+    color:red;
+}
+
+.fa-facebook-square:hover{
+    color:blue;
+}

@@ -1,0 +1,45 @@
+<header class="header navbar position-fixed">
+    <div class="container-fluid">
+
+        <a class="logo" href="/" style="margin-top:-17px;">
+            <img src="/img/logo2.png"></a>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-list" style="margin-top:-10px;">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    <a href="{{ .URL }}" class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ else if $currentPage.HasMenuCurrent "main" . }}has-menu{{ end }}">
+                        {{ .Name }}
+                    </a>
+                {{end}}
+            </li>     
+        </ul>
+
+        <!-- ハンバーガーアイコン -->
+        <div class="menuicon" id="toggle" onclick="menuToggle()">
+            <a class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- ハンバーガーアイコン内のコンテンツ -->
+      <div class="fullpagemenu" id="nav">
+        <div class="nav">
+            <ul>
+                <li class="flex-column">
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                        <a href="{{ .URL }}" class=" {{ if $currentPage.IsMenuCurrent "main" . }}active{{ else if $currentPage.HasMenuCurrent "main" . }}has-menu{{ end }}">
+                            {{ .Name }}
+                        </a>
+                    {{end}}
+                </li>           
+            </ul>
+        </div>
+      </div>
+
+</header>

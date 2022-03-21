@@ -1,0 +1,11 @@
+{{ define "title" }}
+  {{ .Title }} &ndash; {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+  {{ partial "title.html" . }}
+  {{ partial "breadcrumb.html" . }}
+  <div class="md col-10 offset-1">
+    {{ .Content }}
+  </div>
+{{ end }}

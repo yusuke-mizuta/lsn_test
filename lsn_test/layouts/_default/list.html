@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div id="title" style="padding-top:70px;">
+  <div class="col-xs-12">
+      <h1>{{ .Title }}一覧</h1>
+  </div>
+</div>
+{{ partial "breadcrumb.html" . }}
+
+<div class="row">
+
+  <div class="col-10 offset-1 col-md-7 offset-md-1">
+    <h1>{{ .Title }}一覧</h1>
+    {{ range (.Paginator 5).Pages }}
+      <article data-aos="fade-right" data-aos-duration="2000" data-aos-delay="0">
+        <!-- イメージ画像 -->
+        <a href="{{ .RelPermalink }}"><img  class="featured_images" src="{{ .Params.featured_images }}" onerror="this.src='{{ .Params.onerror }}';"/></a>
+        
+        <!-- コンテンツ -->
+        <ul class="col-10 offset-1 col-md-7 offset-md-0">
+          <li><h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2></li>
+          <li>{{ .Date.Format "2006年01月02日" }}</li>
+          <li>
+            {{ with .Params.categories }}
+            <div>
+              {{ range . }} 
+                <a href="/categories/{{ . }}/">#{{ . }} </a>
+              {{ end }}
+            {{ end }}
+            {{ with .Params.tags }}
+              {{ range . }}
+                <a href="/tags/{{ . }}/">#{{ . }} </a>
+              {{ end }}
+            </div>
+            {{ end }}
+          </li>
+        </ul>
+
+      </article>
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}
+  </div>
+
+  <div class="md col-10 offset-1 col-md-3 offset-md-0">
+    {{ partial "tag_bar.html" . }}
+  </div>
+
+</div>
+{{ end }}
