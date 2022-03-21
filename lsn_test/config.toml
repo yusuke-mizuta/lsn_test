@@ -1,9 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://reverent-gates-015aa0.netlify.app/'
 languageCode = 'ja'
-title = 'マイページ'
-
-#ホームページへのリダイレクト
-[[redirects]] from =“ / *” to =“ /index.html” status = 200
+title = 'テストページ'
 
 #mdへのhtmlの追加
 [markup]
