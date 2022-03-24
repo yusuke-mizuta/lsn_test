@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>野球 on test</title>
+    <link>https://yusuke-mizuta.github.io/lsn_test/tags/%E9%87%8E%E7%90%83/</link>
+    <description>Recent content in 野球 on test</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 02 Mar 2022 21:06:31 +0900</lastBuildDate><atom:link href="https://yusuke-mizuta.github.io/lsn_test/tags/%E9%87%8E%E7%90%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>テストです</title>
+      <link>https://yusuke-mizuta.github.io/lsn_test/blog/test/</link>
+      <pubDate>Wed, 02 Mar 2022 21:06:31 +0900</pubDate>
+      
+      <guid>https://yusuke-mizuta.github.io/lsn_test/blog/test/</guid>
+      <description>テストです これはテストです。</description>
+    </item>
+    
+  </channel>
+</rss>

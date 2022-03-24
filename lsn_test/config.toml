@@ -1,4 +1,5 @@
-baseURL = 'https://reverent-gates-015aa0.netlify.app/'
+baseURL = "https://yusuke-mizuta.github.io/lsn_test"
+publishDir = "docs"
 languageCode = 'ja'
 title = 'test'
 
