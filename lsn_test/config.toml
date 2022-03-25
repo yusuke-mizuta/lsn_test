@@ -1,5 +1,5 @@
-baseURL = "https://yusuke-mizuta.github.io/lsn_test"
-publishDir = "docs"
+baseURL = "https://lighthearted-taffy-2befb1.netlify.app/"
+publishDir = "public"
 languageCode = 'ja'
 title = 'test'
 
