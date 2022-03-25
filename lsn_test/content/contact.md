@@ -6,49 +6,12 @@ type: "custom"
 layout: "custom"
 ---
 
-
-## h2は目次のタイトルなどに使いましょう
-
-### h3はリストに使うと便利
-
-#### h4は引用符に使いましょう
-
-##### <span>POINT</span>h5は重要ポイントなどにつかいます
-
-###### h6はこんな感じになります
-
-<dl>
-  <dt>test</dt>
-  <dd>クッキー&クリーム</dd>
-  <dt>リッツ</dt>
-  <dd>プレーンクラッカー</dd>
-</dl> 
-
-***
-
-- [ ] チェックボックスです
-- [x] タバコはご遠慮ください
-
----
-
-[URL](/)
-
----
-
- *aa*
- **aa**
- ***aaa***
-
----
-`$hoge = 1`
-
----
-
-
-
-```html
-<div class="logo">
-  <p>迷いの中あてなく見上げた空彩る星たちが</p>
-  <p>嘘みたいに晴れた朝に繋がることを教えてくれた</p>
+<div style="text-align: center;">
+    <img src="/img/entry.png" class="center" alt="入会募集"></img>
 </div>
-```
+
+<div style="text-align: center;">
+<a href="/" style="width:100px; text-decoration: none;">
+    <button type="button" class="btn btn-outline-warning">入会はこちらから</button>
+</a>
+</div>
