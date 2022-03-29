@@ -16,8 +16,10 @@ title = 'test'
 customCSS = ["/css/style.css",
              "/css/header.css",
              "/css/footer.css",
+             "/css/breadcrumb.css",
              "/css/aos.css",
              "/css/title.css",
+             "/css/list.css",
              "/css/md.css",
              "/css/page_top.css",
              "/css/tag_bar.css"]

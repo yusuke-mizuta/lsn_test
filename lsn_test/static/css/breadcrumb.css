@@ -1,0 +1,33 @@
+/* パンくずリスト */
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+.breadcrumb li {
+    display: inline;
+    list-style: none;
+    font-weight: bold;
+}
+.breadcrumb li:after {
+    content: '>';
+    padding: 0 0.2em;
+    color: #555;
+}
+.breadcrumb li:last-child:after {
+    content: '';
+}
+.breadcrumb li a {
+    text-decoration: none;
+    color: gray;
+}
+.breadcrumb li:first-child a:before {
+    font-family: FontAwesome;
+    content: '\f015';
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #2e7fea;
+}
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
