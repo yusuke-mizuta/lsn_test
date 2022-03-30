@@ -1,6 +1,28 @@
 {{ define "main" }}
 <div class ="main-container" style="padding-top:70px;">
+
 	<section id="mv">
+	</section>
+
+	<!-- News -->
+	<section id="news">
+		<div class="inner">
+			<h2 class="sub_title">NEWS</h2>
+			<ul class="news_list">
+			{{ range first 5 .Site.RegularPages.ByDate.Reverse }}
+				<li class="news_list_item">
+					<b><a href="{{.RelPermalink}}">
+						<div class="news_list_date">
+						  <time>{{.Date.Format "2006-01-02"}}</time>
+						  <p class="news_item">新着記事</p>
+						</div>
+						<p>{{.Title}}</p>
+						<span class="arrow"></span>
+					</a></b>
+				</li>
+			{{ end }}
+			</ul>
+		</div>
 	</section>
 
 	<section id="com-info">
