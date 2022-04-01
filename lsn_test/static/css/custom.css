@@ -1,19 +1,10 @@
 /* よくある質問 */
 #faq{
-    margin:0 0 200px 0;
+    margin:0 0 100px 0;
 }
 #faq h2{
     text-align: center;
 }
-@media screen and (max-width:550px) {
-#faq{
-    margin:0 0 100px 0;
-}   
-#faq h2{
- margin: 0 0 50px 0;   
-}
-}
-
 /*質問BOX*/
 .hidden_box {
     border: 1px solid #ccc;
@@ -60,7 +51,6 @@
     transform: rotate(135deg);
     transition: .2s;
 }
-
 /*隠れている場所*/
 .hidden_box input {
     display: none;
