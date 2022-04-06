@@ -4,6 +4,7 @@
 
 .md img{
     text-align: center;
+    max-width: 400px;
 }
 
 .md ul{
@@ -27,6 +28,10 @@ article h2{
     .featured_images{
         width:90%;
     }
+}
+
+.title_image{
+    text-align: center;
 }
 
 .md h1{

@@ -23,7 +23,7 @@ customCSS = ["/css/style.css",
              "/css/tag_bar.css"]
 
 #読み込むJSの記載
-customJS = ["/js/buttons.js",
+customJS = ["/js/count.js",
             "/js/header.js",
             "/js/page_top.js"]
              
