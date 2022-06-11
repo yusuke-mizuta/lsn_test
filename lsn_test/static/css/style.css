@@ -25,7 +25,19 @@ ul{
     padding-top: 70px;
 }
 
-/* ニュース記事のCSS */
+#mv{
+	margin: 0;
+    margin-top: 0px;
+	width: 100%;
+    height: 650px;
+    text-align: center;
+    color: #000;
+    background-image: url("/img/main.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ニュース記事 */
 #news {
     padding: 65px 0;
     background: #FFF7EA;
@@ -105,7 +117,9 @@ ul{
         padding-right: 0;
     }
 }
+/* ニュース記事 ここまで */
 
+/* カウンター */
 #number{
     background:#ECF2FC;
     height: 400px;
@@ -124,31 +138,18 @@ ul{
     font-weight: bold;
     color: #252C8C;
 }
-
-#mv{
-	margin: 0;
-    margin-top: 0px;
-	width: 100%;
-    height: 650px;
-    text-align: center;
-    color: #000;
-    background-image: url("/img/main.jpg");
-    background-size: cover;
-    background-position: center;
-}
+/* カウンター ここまで　*/
 
 #com-info {
     background-color: #ECEFF1;
     margin-top: -25px;
 }
-
 .com-heading {
     padding-top: 90px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 32px;
 }
-
 section h2 {
     display: block;
     font-size: 1.5em;
@@ -158,7 +159,6 @@ section h2 {
     margin-inline-end: 0px;
     font-weight: bold;
 }
-
 .com-heading::after {
     content: "";
     display: block;

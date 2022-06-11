@@ -1,15 +1,27 @@
 <div class="tag_bar">
-  <h3>タグ</h3>
-  <ul>
-    {{- range $termName, $entries := .Site.Taxonomies.tags }}
-      <li><a href="{{ "/tags/" | relLangURL }}{{ $termName | urlize }}">{{ $termName }}</a> ({{ $entries.Count }})
-    {{- end }}
-  </ul>
+  <div class="hidden_box">
+    <input id="label1" type="checkbox">
+    <label for="label1">種目</label>
+    
+    <div class="hidden_show">
+      <ul>
+        {{- range $termName, $entries := .Site.Taxonomies.tags }}
+          <li><a href="{{ "/tags/" | relLangURL }}{{ $termName | urlize }}">{{ $termName }}</a> ({{ $entries.Count }})
+        {{- end }}
+      </ul>
+    </div>
+  </div>
 
-  <h3>カテゴリー</h3>
-  <ul>
-    {{- range $termName, $entries := .Site.Taxonomies.categories }}
-      <li><a href="{{ "/categories/" | relLangURL }}{{ $termName | urlize }}">{{ $termName }}</a> ({{ $entries.Count }})
-    {{- end }}
-  </ul>
+  <div class="hidden_box">
+    <input id="label2" type="checkbox">
+    <label for="label2">ジャンル</label>
+
+    <div class="hidden_show">
+      <ul>
+        {{- range $termName, $entries := .Site.Taxonomies.categories }}
+          <li><a href="{{ "/categories/" | relLangURL }}{{ $termName | urlize }}">{{ $termName }}</a> ({{ $entries.Count }})
+        {{- end }}
+      </ul>
+    </div>
+  </div>
 </div>
