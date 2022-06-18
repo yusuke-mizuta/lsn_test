@@ -1,7 +1,7 @@
 baseURL = "https://lighthearted-taffy-2befb1.netlify.app/"
 publishDir = "public"
 languageCode = 'ja'
-title = 'test'
+title = '地域おこしスポーツ協力隊ネットワーク'
 
 #mdへのhtmlの追加
 [markup]
@@ -37,14 +37,6 @@ customJS = ["/js/count.js",
     title = "about section"
     url = "/about"
     weight = 6
-
-  [[menu.main]]
-    identifier = "child1"
-    name = "子要素（ダミー）"
-    title = "child1 section"
-    url = "#com-info/blog/child1/"
-    weight = -130
-    parent = "blog"
 
   [[menu.main]]
     identifier = "join"

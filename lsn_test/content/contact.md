@@ -34,4 +34,9 @@ layout: "custom"
 			</div>
 		</div>
 	</div>
+	<div style="text-align: center;">
+	<a href="/" style="width:100px; text-decoration: none;">
+    <button type="button" class="btn btn-outline-warning">問い合わせはこちらから</button>
+	</a>
+	</div>
 </section>

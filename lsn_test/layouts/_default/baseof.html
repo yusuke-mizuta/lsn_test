@@ -4,6 +4,9 @@
   {{ block "head" . }}
   {{ partial "head.html" . }}
   {{ end }}
+  {{ block "head_sub" . }}
+  {{ partial "head_sub.html" . }}
+  {{ end }}
   <body>
     {{ block "header" . }}
       {{ partial "header.html" . }} <!-- 部分テンプレートの貼り付け -->
